@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <ImageView
+            android:id="@+id/panelSecundario"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/serie3cuadrado"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/card_margin"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <FrameLayout android:id="@+id/panelPrincipal"
+                android:layout_height="fill_parent"
+                android:layout_width="match_parent"
+                />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+

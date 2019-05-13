@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/card_margin">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/card_margin"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="3dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:id="@+id/tituloSerie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginTop="8dp"
+                        android:text="Chilling Adventures of Sabrina"
+                        android:textSize="@dimen/tituloSerie"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/temporadas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Temporadas"
+                        android:textSize="@dimen/nombre_serie"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tituloSerie" />
+
+                    <Button
+                        android:id="@+id/temporada1"
+                        android:layout_width="@dimen/tamanio_boton"
+                        android:layout_height="@dimen/tamanio_boton"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:text="1"
+                        android:textSize="@dimen/nombre_serie"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/temporadas"
+                        app:layout_constraintTop_toBottomOf="@+id/temporadas" />
+
+                    <Button
+                        android:id="@+id/temporada2"
+                        android:layout_width="@dimen/tamanio_boton"
+                        android:layout_height="@dimen/tamanio_boton"
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="1"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/nombre_serie"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/temporada1"
+                        app:layout_constraintTop_toBottomOf="@+id/temporadas" />
+
+                    <ExpandableListView
+                        android:id="@+id/expandableEpisodios"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/temporada2">
+
+                    </ExpandableListView>
+
+               </android.support.constraint.ConstraintLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+
+</LinearLayout>

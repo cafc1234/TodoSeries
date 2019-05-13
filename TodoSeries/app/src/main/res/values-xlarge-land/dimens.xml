@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="card_margin">8dp</dimen>
+    <dimen name="portada_title_padding">5dp</dimen>
+    <dimen name="tituloSerie">45dp</dimen>
+    <dimen name="texto_boton">35dp</dimen>
+    <dimen name="tamanio_boton">80dp</dimen>
+
+    <dimen name="nombre_serie">35dp</dimen>
+    <dimen name="portada_cover_height">750dp</dimen>
+
+</resources>
