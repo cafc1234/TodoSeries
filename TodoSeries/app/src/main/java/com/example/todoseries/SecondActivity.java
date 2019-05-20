@@ -4,6 +4,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import maes.tech.intentanim.CustomIntent;
+
 public class SecondActivity extends AppCompatActivity {
     boolean mIsDualPane = false;
 
@@ -30,6 +32,13 @@ public class SecondActivity extends AppCompatActivity {
                 .beginTransaction()
                 .replace(R.id.panelPrincipal, new SerieFragmento())
                 .commit();
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        CustomIntent.customType(this,"right-to-left");
+
     }
 }
 

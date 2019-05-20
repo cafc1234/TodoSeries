@@ -7,6 +7,8 @@
     <dimen name="portada_title_padding">8dp</dimen>
     <dimen name="nombre_serie">14dp</dimen>
     <dimen name="tituloSerie">18dp</dimen>
+    <dimen name="nombrePrincipal">32dp</dimen>
+
     <dimen name="tamanio_boton">35dp</dimen>
 
     <dimen name="portada_cover_height">320dp</dimen>

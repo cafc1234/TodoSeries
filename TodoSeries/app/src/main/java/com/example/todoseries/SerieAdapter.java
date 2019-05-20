@@ -1,16 +1,20 @@
 package com.example.todoseries;
 
+import android.animation.Animator;
 import android.content.Context;
 import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
+
+import maes.tech.intentanim.CustomIntent;
 
 public class SerieAdapter extends RecyclerView.Adapter<SerieAdapter.MyViewHolder> {
 
@@ -39,10 +43,13 @@ public class SerieAdapter extends RecyclerView.Adapter<SerieAdapter.MyViewHolder
         holder.elementView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 Intent intent = new Intent(mContext,SecondActivity.class);
-               /* intent.putExtra("nombre",album.getName());
-                intent.putExtra("cover",album.getThumbnail());*/
+
                 mContext.startActivity(intent);
+
+                CustomIntent.customType(mContext,"left-to-right");
             }
         });
 
@@ -69,4 +76,21 @@ public class SerieAdapter extends RecyclerView.Adapter<SerieAdapter.MyViewHolder
             elementView = view;
         }
     }
+
+    public void animateCircularReveal(View view) {
+        int centerX = 0;
+        int centerY = 0;
+        int startRadius = 0;
+        int endRadius = Math.max(view.getWidth(), view.getHeight());
+        Animator animation = ViewAnimationUtils.createCircularReveal(view, centerX, centerY, startRadius, endRadius);
+        view.setVisibility(View.VISIBLE);
+        animation.start();
+    }
+
+    @Override
+    public void onViewAttachedToWindow(MyViewHolder holder) {
+        super.onViewAttachedToWindow(holder);
+        animateCircularReveal(holder.itemView);
+    }
+
 }

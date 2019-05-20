@@ -38,12 +38,7 @@ public class MainActivity extends AppCompatActivity {
         listaSerie = new ArrayList<>();
         adapter = new SerieAdapter(this, listaSerie);
 
-        listaSerie.add(new Serie("The Umbrella Academy",R.drawable.serie1));
-        listaSerie.add(new Serie("Sex Education",R.drawable.serie2));
-        listaSerie.add(new Serie("Sabrina",R.drawable.serie3));
-        listaSerie.add(new Serie("American Horror Story",R.drawable.serie4));
-        listaSerie.add(new Serie("Hora de aventura",R.drawable.serie5));
-        listaSerie.add(new Serie("Bojack Horseman",R.drawable.serie6));
+
 
 
 
@@ -51,6 +46,64 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setAdapter(adapter);
 
+        listaSerie.add(new Serie("The Umbrella Academy",R.drawable.serie1));
+        listaSerie.add(new Serie("Sex Education",R.drawable.serie2));
+        listaSerie.add(new Serie("Sabrina",R.drawable.serie3));
+        listaSerie.add(new Serie("American Horror Story",R.drawable.serie4));
+        listaSerie.add(new Serie("Hora de aventura",R.drawable.serie5));
+        listaSerie.add(new Serie("Bojack Horseman",R.drawable.serie6));
+        listaSerie.add(new Serie("South Park",R.drawable.serie7));
+        listaSerie.add(new Serie("Juego de tronos",R.drawable.serie8));
+        listaSerie.add(new Serie("American Horror Story",R.drawable.serie9));
+        listaSerie.add(new Serie("House",R.drawable.serie10));
+        listaSerie.add(new Serie("Arrow",R.drawable.serie11));
+        listaSerie.add(new Serie("Supergirl",R.drawable.serie12));
+        listaSerie.add(new Serie("Pablo Escobar",R.drawable.serie13));
+        listaSerie.add(new Serie("Glee",R.drawable.serie14));
+        listaSerie.add(new Serie("Greys Anatomy",R.drawable.serie15));
+        listaSerie.add(new Serie("Orange is the new Black",R.drawable.serie16));
+        listaSerie.add(new Serie("Lost",R.drawable.serie17));
+        listaSerie.add(new Serie("Los Simpsons",R.drawable.serie18));
+        listaSerie.add(new Serie("The Umbrella Academy",R.drawable.serie1));
+        listaSerie.add(new Serie("Sex Education",R.drawable.serie2));
+        listaSerie.add(new Serie("Sabrina",R.drawable.serie3));
+        listaSerie.add(new Serie("American Horror Story",R.drawable.serie4));
+        listaSerie.add(new Serie("Hora de aventura",R.drawable.serie5));
+        listaSerie.add(new Serie("Bojack Horseman",R.drawable.serie6));
+        listaSerie.add(new Serie("South Park",R.drawable.serie7));
+        listaSerie.add(new Serie("Juego de tronos",R.drawable.serie8));
+        listaSerie.add(new Serie("American Horror Story",R.drawable.serie9));
+        listaSerie.add(new Serie("House",R.drawable.serie10));
+        listaSerie.add(new Serie("Arrow",R.drawable.serie11));
+        listaSerie.add(new Serie("Supergirl",R.drawable.serie12));
+        listaSerie.add(new Serie("Pablo Escobar",R.drawable.serie13));
+        listaSerie.add(new Serie("Glee",R.drawable.serie14));
+        listaSerie.add(new Serie("Greys Anatomy",R.drawable.serie15));
+        listaSerie.add(new Serie("Orange is the new Black",R.drawable.serie16));
+        listaSerie.add(new Serie("Lost",R.drawable.serie17));
+        listaSerie.add(new Serie("Los Simpsons",R.drawable.serie18));
+        listaSerie.add(new Serie("The Umbrella Academy",R.drawable.serie1));
+        listaSerie.add(new Serie("Sex Education",R.drawable.serie2));
+        listaSerie.add(new Serie("Sabrina",R.drawable.serie3));
+        listaSerie.add(new Serie("American Horror Story",R.drawable.serie4));
+        listaSerie.add(new Serie("Hora de aventura",R.drawable.serie5));
+        listaSerie.add(new Serie("Bojack Horseman",R.drawable.serie6));
+        listaSerie.add(new Serie("South Park",R.drawable.serie7));
+        listaSerie.add(new Serie("Juego de tronos",R.drawable.serie8));
+        listaSerie.add(new Serie("American Horror Story",R.drawable.serie9));
+        listaSerie.add(new Serie("House",R.drawable.serie10));
+        listaSerie.add(new Serie("Arrow",R.drawable.serie11));
+        listaSerie.add(new Serie("Supergirl",R.drawable.serie12));
+        listaSerie.add(new Serie("Pablo Escobar",R.drawable.serie13));
+        listaSerie.add(new Serie("Glee",R.drawable.serie14));
+        listaSerie.add(new Serie("Greys Anatomy",R.drawable.serie15));
+        listaSerie.add(new Serie("Orange is the new Black",R.drawable.serie16));
+        listaSerie.add(new Serie("Lost",R.drawable.serie17));
+        listaSerie.add(new Serie("Los Simpsons",R.drawable.serie18));
+
+
         adapter.notifyDataSetChanged();
     }
+
+
 }

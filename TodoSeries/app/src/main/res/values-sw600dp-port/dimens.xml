@@ -6,6 +6,8 @@
     <dimen name="card_margin">8dp</dimen>
     <dimen name="portada_title_padding">15dp</dimen>
     <dimen name="tituloSerie">45dp</dimen>
+    <dimen name="nombrePrincipal">90dp</dimen>
+
     <dimen name="texto_boton">35dp</dimen>
     <dimen name="tamanio_boton">80dp</dimen>
 

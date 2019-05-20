@@ -7,7 +7,9 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
+
     </style>
+
 
     <style name="imagenPortadaMiniatura" >
         <item name="android:layout_width">match_parent</item>
@@ -22,6 +24,11 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:padding">@dimen/portada_title_padding</item>
         <item name="android:textSize">@dimen/nombre_serie</item>
+
+    </style>
+
+    <style name="CustomProgressBar">
+        <item name="android:background">@xml/progress</item>
 
     </style>
 
